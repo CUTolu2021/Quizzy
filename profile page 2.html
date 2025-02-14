@@ -1,78 +1,107 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Dashboard</title>
+    <title>Profile Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="bg-purple-100 flex justify-center items-center min-h-screen">
-    <div class="w-full max-w-md bg-white p-6 rounded-2xl shadow-lg">
-        <button class="text-gray-600 flex items-center mb-4">
-            <span class="text-purple-600 mr-2">⬅️</span> Back
-        </button>
-        <div class="flex flex-col items-center">
-            <div class="w-16 h-16 bg-purple-200 rounded-full flex justify-center items-center">
-                <span class="text-purple-600 text-xl font-bold">👤</span>
-            </div>
-            <h2 class="text-lg font-semibold mt-2">Uchechukwu</h2>
-            <p class="text-gray-500 text-sm">Quiz Creator</p>
+<body class="bg-purple-100">
+    <div class="p-4">
+        <div class="flex items-center mb-4">
+            <a href="your-back-link.html" class="flex items-center text-gray-600">
+                <i class="fas fa-arrow-left mr-2"></i>
+                <span>Back</span>
+            </a>
         </div>
-        
-        <div class="mt-6 grid grid-cols-2 gap-4">
-            <div class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">🏆</span>
-                <span class="font-semibold">Leaderboard Rank</span>
-                <span class="text-sm">#5</span>
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center">
+                    <i class="fas fa-user text-purple-500 text-3xl"></i>
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-xl font-semibold">Uchechukwu</h2>
+                    <p class="text-gray-500">Quiz Creator</p>
+                </div>
             </div>
-            <div class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">⭐</span>
-                <span class="font-semibold">Total Points</span>
-                <span class="text-sm">82</span>
-            </div>
-            <div class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">📝</span>
-                <span class="font-semibold">Quizzes Taken</span>
-                <span class="text-sm">5</span>
-            </div>
-            <div class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">⏳</span>
-                <span class="font-semibold">Avg. Finish Time</span>
-                <span class="text-sm">24m 13s</span>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas fa-trophy text-purple-500 text-xl mr-2"></i>
+                        <div>
+                            <p class="text-gray-500">Leaderboard Rank</p>
+                            <p class="text-purple-500 font-semibold">#5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas fa-share-alt text-purple-500 text-xl mr-2"></i>
+                        <div>
+                            <p class="text-gray-500">Total Points</p>
+                            <p class="text-purple-500 font-semibold">82</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-purple-500 text-xl mr-2"></i>
+                        <div>
+                            <p class="text-gray-500">Quizzes Taken</p>
+                            <p class="text-purple-500 font-semibold">5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas fa-hourglass-half text-purple-500 text-xl mr-2"></i>
+                        <div>
+                            <p class="text-gray-500">Avg. Finish Time</p>
+                            <p class="text-purple-500 font-semibold">24m 13s</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <h3 class="mt-8 text-lg font-semibold text-purple-600">Quick Actions</h3>
-        <div class="mt-4 grid grid-cols-2 gap-4">
-            <button class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">▶️</span>
-                <span class="font-semibold">Start Quiz</span>
-                <span class="text-sm">Start your quiz journey now</span>
-            </button>
-            <button class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">📂</span>
-                <span class="font-semibold">Recent Quizzes</span>
-                <span class="text-sm">View your recent quiz history</span>
-            </button>
-            <button class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">📨</span>
-                <span class="font-semibold">Invite Users</span>
-                <span class="text-sm">Invite friends to join Quizzy</span>
-            </button>
-            <button class="bg-gray-200 p-3 rounded-lg flex flex-col items-center">
-                <span class="text-purple-600 text-2xl">⚙️</span>
-                <span class="font-semibold">Settings</span>
-                <span class="text-sm">Adjust your preferences and options</span>
-            </button>
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h3 class="text-lg font-semibold mb-4">Quick Actions</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center">
+                    <i class="fas fa-brain text-purple-500 text-2xl mr-2"></i>
+                    <div>
+                        <p class="font-semibold">Start Quiz</p>
+                        <p class="text-gray-500">Start your quiz journey now</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-history text-purple-500 text-2xl mr-2"></i>
+                    <div>
+                        <p class="font-semibold">Recent Quizzes</p>
+                        <p class="text-gray-500">View your recent quiz history</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-user-plus text-purple-500 text-2xl mr-2"></i>
+                    <div>
+                        <p class="font-semibold">Invite Users</p>
+                        <p class="text-gray-500">Invite friends to join Quizzy</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-cog text-purple-500 text-2xl mr-2"></i>
+                    <div>
+                        <p class="font-semibold">Settings</p>
+                        <p class="text-gray-500">Adjust your preferences and options</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <button class="mt-6 w-full bg-red-500 text-white p-3 rounded-lg flex items-center">
-            <span class="text-white mr-2">🚪</span>Log Out
-        </button>
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+            <button class="text-red-500 font-semibold">Log Out</button>
+        </div>
     </div>
 </body>
 </html>
-
 
 
 
